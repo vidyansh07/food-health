@@ -1,0 +1,378 @@
+#body{
+  background-color:  rgb(214, 239, 230);
+}
+.end{
+  background-color: #010a12;
+}
+dropdown{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+nav{
+  background: rgb(5, 46, 31);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2  0px;
+}
+
+#nutrition{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+#benefits{
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+.container-quiz{
+    padding-top: 1px;
+    text-align:center;    
+    height:600px;
+    width:100%;
+    background-color: whitesmoke;
+    margin:0 0 0 40px ;    
+}
+
+#healthIssueInput{
+  margin-top: 30px;
+}
+#aboutcontainer{
+margin: px;
+padding: 200px;
+}
+.center{
+      text-align: center;    
+    height:300px;
+    width:95%;
+    background-color:  rgb(214, 239, 230);
+    margin:50px 0 0 40px ;    
+}
+.search{
+  padding-top: 50px;
+  text-align: center;    
+  height:300px;
+  width:95%;
+  background-color: whitesmoke;
+  margin: 40px;    
+
+}
+.heead{
+  text-align: center ;
+}
+#section11{
+    margin-top: 50px;
+  }
+.card {
+    border: none;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 0.9rem ;
+    line-height: 1.5;
+  }
+  
+  .fa-3x {
+    color: #20653c;
+  }
+  table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  th,
+  td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: center;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  /* Animate table rows */
+table {
+    border-collapse: collapse;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #ddd;
+  }
+  
+  tr {
+    transform: scale(0);
+    animation: fade-in 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      transform: scale(0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+/* Style for Benefits section */
+#benefits {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+  }
+  
+  #benefits h2 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    color: #555;
+  }
+  
+  #benefits p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  #benefits ul {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  #benefits ul li {
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  #benefits ul li:before {
+    position: absolute;
+    left: 0;
+    color: #555;
+  }
+  
+  #benefits img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animation for Benefits section */
+  #benefits .row {
+    transform: translateX(-100%);
+    animation: slide-in 0.5s ease-in-out forwards;
+  }
+  
+  #benefits ul li {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 0.3s ease-in-out forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+/* Style for footer section */
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.footer h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+section h2 {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul li {
+	flex-basis: 33%;
+	padding: 20px;
+	text-align: center;
+}
+
+ul li img {
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color:#0e0101;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+/* bmi calculator */
+/* Style for BMI calculator section */
+.bmi-section {
+  background-color: #f7f7f7;
+  padding: 80px 0;
+}
+
+.bmi-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.bmi-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.bmi-form div {
+  margin-bottom: 20px;
+}
+
+.bmi-form label {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bmi-form input[type="number"] {
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bmi-form button {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.bmi-form button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  display: none;
+}
+
+.result p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result span {
+  color: #00ff37;
+}

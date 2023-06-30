@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health By Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384
+  -aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-warning-emphasis" id="body">
+  <nav class="navbar navbar-expand-lg bg-body-outline-success" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html">Health By Food</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="home">
+              <li class="nav-item" id="raj">
+                <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+              </li>
+            </div>
+            <div class="health">
+              <li dsclass="nav-item" id="navitems">
+                <a class="nav-link" href="quiz.html">Health issue</a>
+              </li>
+            </div>
+            <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bmi.html">BMI</a></li>
+                  <li><a class="dropdown-item" href="#contact">contact us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+ 
+<section class="center">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Your's welcome on Food to health.</h1>
+        <p class="lead">Their in our life some common Eating mistake distroys Our Health.</p>
+        <a href="mistake.html" class="btn btn-outline-success btn-lg">Learn More</a>
+      </div>
+    </div>  
+
+  </section>
+  <hr>
+  <div class="search">
+    <h2 class="text-center active mb-8">How Good Food Can Improve Your Health</h2>
+    <p>Welcome, Here you can check food Quantity and its Nutritional Information.</p>
+    <input type="text" id="fruitInput">
+    <button class="btn btn-outline-success" type="submit" onclick="getFruitNutrition()">Search</button>
+    </form>
+    <p id="fruitNutrition"></p>
+  </div>
+  
+  <script>
+    function getFruitNutrition() {
+      let input = document.getElementById("fruitInput").value.toLowerCase();
+      let nutrition = "";
+  
+      switch(input) {
+        case "apple":
+          nutrition = "Apples are a good source of dietary fiber and vitamin C. They also contain small amounts of other vitamins and minerals.";
+          break;
+        case "banana":
+          nutrition = "Bananas are a good source of dietary fiber, vitamin C, and potassium. They also contain small amounts of other vitamins and minerals.";
+          break;
+        case "orange":
+          nutrition = "Oranges are a good source of vitamin C and fiber. They also contain small amounts of other vitamins and minerals.";
+          break;
+        case "strawberry":
+          nutrition = "Strawberries are a good source of vitamin C, dietary fiber, and manganese. They also contain small amounts of other vitamins and minerals.";
+          break;
+        case "blueberry":
+          nutrition = "Blueberries are a good source of dietary fiber, vitamin C, and vitamin K. They also contain small amounts of other vitamins and minerals.";
+          break;
+        default:
+          nutrition = "Sorry, we do not have nutrition information for that fruit.";
+      }
+  
+      document.getElementById("fruitNutrition").innerHTML = nutrition;
+    }
+  </script>
+
+
+
+
+  <hr>
+  <section class="center2">
+    <!-- Features -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-cog fa-3x mb-3"></i>
+              <h5 class="card-title">Food and nutrients</h5>
+              <p class="card-text">In this section knows how much calories and nutrients and cailories are available in your food. <a href="ntable.html">learn more</a></p>       
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+              <h5 class="card-title">Healthline</h5>
+              <p class="card-text">There are 6 basic nutrients that can help support your health, even in small amounts.
+                Eating a balanced diet can help you make sure you’re
+                regularly consuming each one.
+                <a href="https://www.healthline.com/health/food-nutrition/six-essential-nutrients">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-code fa-3x mb-3"></i>
+              <h5 class="card-title">W.H.O</h5>
+              <p class="card-text">Food is an essential aspect of our lives, and the nutrients we get
+                from
+                the food we eat have a significant impact on our health. <a
+                href="https://www.who.int/news/item/26-09-2019-malnutrition-is-a-world-health-crisis">World Health
+                Organization on health problem.</a></p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="center4">
+    <section id="benefits" class="py-9">
+      <div class="container">
+        <h2 class="text-center active mb-8">How Good Food Can Improve Your Health</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Eating a balanced and nutritious diet is one of the best things you can do for your health. Good food can
+              provide your body with the nutrients and energy it needs to function at its best, and can help prevent a
+              range of health problems, including:</p>
+            <table>
+              <ul>
+              <li>Heart disease</li>
+              <li>Stroke</li>
+              <li>Diabetes</li>
+              <li>Cancer</li>
+              <li>High blood pressure</li>
+              <li>Obesity</li>
+            </ul>
+           </table>
+          </div>
+          <div class="col-md-6">
+            <div class="img">
+              <img src="diet (1).png" height="400px" width="400px" alt="Healthy Food" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+        <p class="mt-4">In addition to preventing disease, eating a healthy diet can also help improve your mood, boost
+          your energy levels, and support healthy aging. Some tips for incorporating more healthy foods into your diet
+          include:</p>
+        <ul>
+          <li>Eating a variety of fruits and vegetables</li>
+          <li>Choosing whole grains over refined grains</li>
+          <li>Limiting processed foods and sugary drinks</li>
+          <li>Choosing lean sources of protein, such as fish, chicken, and beans</li>
+          <li>Drinking plenty of water</li>
+          <li>Limiting your intake of saturated and trans fats</li>
+
+        </ul>
+        <hr>
+        <h2 class="text-center active mb-8">How good food Imapacts on our health</h2>
+              <ol>
+                <li>The food we eat provides our bodies with the nutrients they need to function properly, including macronutrients (such as carbohydrates, proteins, and fats) and micronutrients (such as vitamins and minerals).</li>
+                <li>Eating a balanced and varied diet is important for maintaining good health.</li>
+                <li>Processed foods, foods high in saturated and trans fats, and foods high in added sugars have been linked to an increased risk of chronic diseases such as heart disease, diabetes, and some cancers.</li>
+                <li>A diet rich in whole foods and plant-based foods has been associated with a decreased risk of chronic diseases and a longer lifespan.</li>
+                <li>The way food is prepared can impact its healthfulness. For example, deep-frying and grilling at high temperatures can produce harmful compounds, while steaming, boiling, and baking are generally healthier cooking methods.</li>
+                <li>Eating too much or too little can have negative effects on our health, such as weight gain or nutrient deficiencies.</li>
+                <li>It's important to pay attention to food safety to prevent foodborne illness. This includes properly storing, handling, and cooking food to prevent contamination.</li>
+                <li>Drinking plenty of water and staying hydrated is important for overall health and can also help with weight management.</li>
+                <li>Some foods and nutrients have been shown to have specific health benefits. For example, omega-3 fatty acids found in fatty fish can reduce inflammation and improve heart health.</li>
+                <li>Alcohol and caffeine can both impact our health depending on how much we consume. Excessive alcohol consumption can damage our organs and increase the risk of certain cancers, while excessive caffeine consumption can cause jitters, anxiety, and disrupt sleep.</li>
+                <li>Food allergies and intolerances can cause a range of symptoms from mild discomfort to severe reactions and should be managed by avoiding trigger foods and seeking medical attention if necessary.</li>
+              </ol>
+      </div>
+    </section>
+    <!-- Nutrition Table -->
+    
+  <hr>
+  <!-- Benefits of Healthy Eating -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384
+  -qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+  <hr>
+</body>
+<footer class="end" id="contact">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>123 Main Street, Anytown India 12345<br>
+            Phone: 555-555-5555<br>
+            Email: info@healthyfood.com</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f">Facebook</i></a></li><br>
+            <li><a href="#"><i class="fab fa-twitter">Twitter</i></a></li><br>
+            <li><a href="#"><i class="fab fa-instagram">Instagram</i></a></li><br>
+            <li><a href="#"><i class="fab fa-youtube">Youtube</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health By Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384
+  -aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black-emphasis" id="boody">
+  <nav class="navbar navbar-expand-lg bg-body-outline-success" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html">Health By Food</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="home">
+              <li class="nav-item" id="raj">
+                <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+              </li>
+            </div>
+            <div class="health">
+              <li class="nav-item" id="navitems">
+                <a class="nav-link" href="quiz.html">Health issue</a>
+              </li>
+            </div>
+            <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About us</a></li>
+                  <li><a class="dropdown-item" href="#contact">contact us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+        </ul>
+      <div class="firstsearch">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </nav>
+<div class="container-quiz">
+    <div class="container chatbot-container">
+      <div class="chatbot-message">
+        <h1> <em> Hello! Here we can search the Health Issue. </em> </h1>
+      </div>
+      <div class="chatbot-user-message">
+        <p></p>
+      </div>
+      <div class="chatbot-message">
+      </div>
+    </div>
+
+	<H2>Please describe your health issue</H2>
+
+	<input type="text" id="healthIssueInput">
+  <button class="btn btn-outline-success" onclick="suggestFoodAndExercise()" type="submit">Search</button><br><br><br>
+
+  <div class="answer">
+    <h3 id="foodSuggestion">You can Use these food -  ...............</h3><br>
+      <br>
+     <h3 id="exerciseSuggestion"> You can Use these exercises -...............</h3>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384
+  -qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</div>
+
+	<script>
+		function suggestFoodAndExercise() {
+			let input = document.getElementById("healthIssueInput").value.toLowerCase();
+			let foodSuggestion = "";
+			let exerciseSuggestion = "";
+
+			switch(input) {
+				case "weight loss":
+					foodSuggestion = "Try eating more lean proteins like chicken, fish, and tofu, as well as leafy greens like spinach and kale. Avoid sugary drinks and processed foods.";
+					exerciseSuggestion = "Try doing cardio exercises like running or cycling, as well as strength training with weights or resistance bands.";
+					break;
+				case "muscle gain":
+					foodSuggestion = "Try eating more protein-rich foods like eggs, beef, and lentils, as well as complex carbohydrates like sweet potatoes and brown rice. Make sure to also eat enough healthy fats like avocado and nuts.";
+					exerciseSuggestion = "Try doing strength training exercises with weights or resistance bands, focusing on compound movements like squats and deadlifts.";
+					break;
+				case "fatigue":
+					foodSuggestion = "Try eating more whole grains like quinoa and brown rice, as well as fruits and vegetables like bananas and spinach that are high in potassium and magnesium. Avoid sugary and processed foods that can cause energy crashes.";
+					exerciseSuggestion = "Try doing low-impact exercises like yoga or tai chi to improve circulation and reduce stress, as well as light cardio like walking or swimming.";
+					break;
+        case "high blood pressure":
+          foodSuggestion = "Eat more whole grains, fruits and vegetables, and low-fat dairy products.";
+          exerciseSuggestion = "Avoid saturated and trans fats, as well as foods high in sodium. Exercise regularly, including aerobic exercise and strength training.";
+          break;
+        case "high cholestesrol":
+          foodSuggestion = "Eat more fruits, vegetables, and whole grains, as well as lean proteins like chicken, fish, and legumes";
+          exerciseSuggestion = " Avoid foods high in saturated and trans fats. Exercise regularly, including aerobic exercise and strength training.";
+          break;
+        case "acid reflux":
+          foodSuggestion = "Eat smaller, more frequent meals throughout the day and avoid large meals. Avoid spicy and acidic foods, as well as alcohol and caffeine.";
+          exerciseSuggestion = " Exercise regularly, including low-impact exercises like walking or yoga.";
+          break;
+        case "arthritis":
+          foodSuggestion = "Eat more anti-inflammatory foods like fruits, vegetables, whole grains, and fatty fish like salmon. Avoid processed and fried foods, as well as foods high in saturated and trans fats";
+          exerciseSuggestion = " Exercise regularly, including low-impact exercises like walking, swimming, or yoga.";
+          break;
+        case "depression":
+          foodSuggestion = "Eat more foods rich in omega-3 fatty acids, such as fatty fish like salmon and nuts and seeds like chia seeds and flaxseeds";
+          exerciseSuggestion = "Avoid processed and sugary foods. Exercise regularly, including aerobic exercise and strength training.";
+          break;
+        case "anxiety":
+          foodSuggestion = "Eat more complex carbohydrates like whole grains and fruits and vegetables, as well as lean proteins like chicken and fish. Avoid caffeine and alcohol.";
+          exerciseSuggestion = "Avoid caffeine and alcohol. Exercise regularly, including aerobic exercise and relaxation techniques like yoga or meditation.";
+          break;
+        case "migraines":
+          foodSuggestion = "Eat regular meals and avoid skipping meals. Avoid foods that trigger migraines, such as aged cheeses, chocolate, and red wine.";
+          exerciseSuggestion = "Exercise regularly, including low-impact exercises like walking or yoga.";
+				  break;
+          default:
+					foodSuggestion = "Sorry, we do not have food suggestions for that health issue.";
+					exerciseSuggestion = "Sorry, we do not have exercise suggestions for that health issue.";
+			}
+
+			document.getElementById("foodSuggestion").innerHTML = "Food suggestion: " + foodSuggestion;
+			document.getElementById("exerciseSuggestion").innerHTML = "Exercise suggestion: " + exerciseSuggestion;
+		}
+	</script>
+
+</body>
+  <footer class="end">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>123 Main Street, Anytown India 12345<br>
+              Phone: 555-555-5555<br>
+              Email: info@healthyfood.com</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f">Facebook</i></a></li><br>
+              <li><a href="#"><i class="fab fa-twitter">Twitter</i></a></li><br>
+              <li><a href="#"><i class="fab fa-instagram">Instagram</i></a></li><br>
+              <li><a href="#"><i class="fab fa-youtube">Youtube</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer>
+
+  
+
+  </html>

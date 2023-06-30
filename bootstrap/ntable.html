@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health By Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384
+  -aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-warning-emphasis" id="boody">
+  <nav class="navbar navbar-expand-lg bg-body-outline-success" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html">Health By Food</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="home">
+              <li class="nav-item" id="raj">
+                <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+              </li>
+            </div>
+            <div class="health">
+              <li class="nav-item" id="navitems">
+                <a class="nav-link" href="quiz.html">Health issue</a>
+              </li>
+            </div>
+            <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="about.html">About us</a></li>
+                  <li><a class="dropdown-item" href="#contact">contact us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+        </ul>
+      <div class="firstsearch">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </nav>
+    <section id="nutrition" class="bg-light py-5">
+        <div class="container">
+          <h2 class="text-center mb-5">Nutritional Value of Fruits and Vegetables</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead style="width:10%">
+                <tr id="tablehead">
+                  <th>Fruit / Vegetable</th>
+  
+                </tr>
+              </thead>
+              <tbody id="foodtable">
+                <tr>
+                  <td>Apple</td>
+                  <td>95</td>
+                  <td>0.5g</td>
+                  <td>4g</td>
+                  <td>8mg</td>
+                  <td>73IU</td>
+                </tr>
+                <tr>
+                  <td>Banana</td>
+                  <td>105</td>
+                  <td>1.3g</td>
+                  <td>3g</td>
+                  <td>10mg</td>
+                  <td>76IU</td>
+                </tr>
+                <tr>
+                  <td>Orange</td>
+                  <td>62</td>
+                  <td>1.2g</td>
+                  <td>3g</td>
+                  <td>70mg</td>
+                  <td>295IU</td>
+                </tr>
+                <tr>
+                  <td>Carrot</td>
+                  <td>25</td>
+                  <td>0.6g</td>
+                  <td>2g</td>
+                  <td>5mg</td>
+                  <td>10191IU</td>
+                </tr>
+                <tr>
+                  <td>Spinach</td>
+                  <td>23</td>
+                  <td>2.9g</td>
+                  <td>2.2g</td>
+                  <td>8mg</td>
+                  <td>469IU</td>
+                </tr>
+  
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </section>
+    <hr>
+  
+    <!-- Benefits of Healthy Eating -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384
+    -qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+     function getData(url){
+      
+    
+    
+     }
+     getData("https://api.nal.usda.gov/fdc/v1/foods/list?api_key=4Xj0Ckmd5ZezdXydMRUEUoHdDzdsQtZXlOkoWrP4");
+    });
+  
+  
+   
+  </script>
+  
+  </html>
+
+    
+</body>
+<footer class="end">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Contact Us</h4>
+            <p>123 Main Street, Anytown India 12345<br>
+              Phone: 555-555-5555<br>
+              Email: info@healthyfood.com</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Follow Us</h4>
+            <ul class="social-icons">
+              <li><a href="#"><i class="fab fa-facebook-f">Facebook</i></a></li><br>
+              <li><a href="#"><i class="fab fa-twitter">Twitter</i></a></li><br>
+              <li><a href="#"><i class="fab fa-instagram">Instagram</i></a></li><br>
+              <li><a href="#"><i class="fab fa-youtube">Youtube</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </footer>

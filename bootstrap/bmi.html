@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health By Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384
+  -aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-warning-emphasis" id="boody">
+  <nav class="navbar navbar-expand-lg bg-body-outline-success" id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index2.html">Health By Food</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="home">
+              <li class="nav-item" id="raj">
+                <a class="nav-link active" aria-current="page" href="index2.html">Home</a>
+              </li>
+            </div>
+            <div class="health">
+              <li dsclass="nav-item" id="navitems">
+                <a class="nav-link" href="quiz.html">Health issue</a>
+              </li>
+            </div>
+            <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="bmi.html">BMI</a></li>
+                  <li><a class="dropdown-item" href="#contact">contact us</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </div>
+        </ul>
+      <div class="firstsearch">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bmi-section">
+    <div class="container">
+      <h2>BMI Calculator</h2>
+      <form class="bmi-form">
+        <div>
+          <label for="weight">Weight (in kg):</label>
+          <input type="number" id="weight" name="weight" required>
+        </div>
+        <div>
+          <label for="height">Height (in cm):</label>
+          <input type="number" id="height" name="height" required>
+        </div>
+        <button class="calculate-button" type="button">Calculate BMI</button>
+        <div class="result">
+          <p>Your BMI is: <span id="bmi"></span></p>
+          <p>You are <span id="status"></span></p>
+        </div>
+      </form>
+    </div>
+  </section>
+            <script>
+  
+                const calculateButton = document.querySelector('.calculate-button');
+                const resultSection = document.querySelector('.result');
+                const bmiResult = document.querySelector('#bmi');
+                const statusResult = document.querySelector('#status');
+
+                calculateButton.addEventListener('click', calculateBMI);
+
+                function calculateBMI() {
+                const weight = document.querySelector('#weight').value;
+                const height = document.querySelector('#height').value / 100;
+                const bmi = (weight / (height * height)).toFixed(1);
+
+                bmiResult.textContent = bmi;
+
+                if (bmi < 18.5) {
+                    statusResult.textContent = 'underweight';
+                } else if (bmi >= 18.5 && bmi <= 24.9) {
+                    statusResult.textContent = 'normal weight';
+                } else if (bmi >= 25 && bmi <= 29.9) {
+                    statusResult.textContent = 'overweight';
+                } else {
+                    statusResult.textContent = 'obese';
+                }
+
+                resultSection.style.display = 'block';
+                }
+            </script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384
+  -qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  <hr>
+</body>
+<footer class="end" id="contact">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>123 Main Street, Anytown India 12345<br>
+            Phone: 555-555-5555<br>
+            Email: info@healthyfood.com</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Follow Us</h4>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-facebook-f">Facebook</i></a></li><br>
+            <li><a href="#"><i class="fab fa-twitter">Twitter</i></a></li><br>
+            <li><a href="#"><i class="fab fa-instagram">Instagram</i></a></li><br>
+            <li><a href="#"><i class="fab fa-youtube">Youtube</i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>  
